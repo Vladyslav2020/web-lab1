@@ -6,7 +6,7 @@
         "jest": true,
         "node": true
     },
-    "extends": ["eslint:recommended"],
+    "extends": ["eslint:recommended", "plugin:sonarjs/recommended"],
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -14,7 +14,7 @@
         "ecmaVersion": 12,
         "sourceType": "module"
     },
-    "plugins": ["jest"],
+    "plugins": ["jest", "sonarjs"],
     "rules": {
         "comma-dangle": "off",
         "handle-callback-err": "off",
@@ -25,6 +25,7 @@
         "no-multi-spaces": "warn",
         "space-in-parens": "warn",
         "no-multiple-empty-lines": "warn",
+        "sonarjs/no-duplicate-string": "off",
         "prefer-const": "warn",
         "no-use-before-define": "warn"
     }

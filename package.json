@@ -5,20 +5,22 @@
     "description": "",
     "main": "index.js",
     "dependencies": {
-        "eslint": "^7.11.0",
         "eslint-plugin-jest": "^25.3.0",
         "eslint-plugin-prettier": "^4.0.0",
-        "prettier": "^2.4.1"
+        "eslint-plugin-sonarjs": "^0.11.0"
     },
     "devDependencies": {
+        "eslint": "^7.11.0",
+        "prettier": "^2.4.1",
         "husky": "^7.0.4",
         "lint-staged": "^11.2.6",
+        "sonarjs": "^1.0.0",
         "stylelint": "^14.0.1",
         "stylelint-config-standard": "^23.0.0"
     },
     "scripts": {
-        "lint": "eslint \"**/*.js\" --ignore-path .gitignore --no-error-on-unmatched-pattern",
-        "lint:fix": "eslint \"**/*.js\" --fix --ignore-path .gitignore --no-error-on-unmatched-pattern",
+        "lint": "eslint \"**/*.js\" --ignore-path .gitignore",
+        "lint:fix": "eslint \"**/*.js\" --fix --ignore-path .gitignore",
         "format": "prettier --check . \"!**/*.css\" --ignore-path .gitignore",
         "format:fix": "prettier --write . \"!**/*.css\" --ignore-path .gitignore",
         "stylelint": "stylelint \"**/*.css\" --ignore-path .gitignore",
